@@ -86,10 +86,3 @@ void selection() {
 
   robots = newGeneration;
 }
-
-/**
- * Let's the generation of robots do it's thing and then creates a new one accordingly.
- **/
-void evolve() {
-  // TODO.
-}

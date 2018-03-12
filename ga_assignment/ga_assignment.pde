@@ -32,9 +32,18 @@ void setup() {
   bestAttempt = new Robot(robots[0]);
 }
 
-// Main loop.
+/**
+ * Main loop of the program. 
+ **/
 void draw() {
   evolve(); //Runs the genetic algorithm
   drawField(); //Draws the objects on the field
   generationCounter++;
+}
+
+/**
+ * Let's the generation of robots do it's thing and then creates a new one accordingly.
+ **/
+void evolve() {
+  // TODO.
 }
