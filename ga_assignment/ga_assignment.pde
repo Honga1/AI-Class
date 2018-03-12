@@ -18,32 +18,44 @@ Robot[] robots;
 Robot bestAttempt;
 Goal goal;
 
+
+/**
+ * Initialisation of the board. 
+ **/
 void setup() {
-  size(1000, 1000); //Minimum X-Y
-  frameRate(10000); //Set this high to un-cap our computation rate
 
-  goal = new Goal(width/2, height/2);
-  robots = new Robot[populationSize];
+    // Minimum X-Y.
+    size(1000, 1000); 
+    
+    // Set this high to un-cap our computation rate.
+    frameRate(10000); 
 
-  for (int i = 0; i < populationSize; i++) {
-    robots[i] = new Robot(geneSize);
-  }
+    goal = new Goal(width/2, height/2);
+    robots = new Robot[populationSize];
 
-  bestAttempt = new Robot(robots[0]);
+    for (int i = 0; i < populationSize; i++) {
+        robots[i] = new Robot(geneSize);
+    }
+
+    bestAttempt = new Robot(robots[0]);
 }
 
 /**
  * Main loop of the program. 
  **/
 void draw() {
-  evolve(); //Runs the genetic algorithm
-  drawField(); //Draws the objects on the field
-  generationCounter++;
+    
+    // Runs the genetic algorithm.
+    evolve();
+    
+    // Draws the objects on the field.
+    drawField(); 
+    generationCounter++;
 }
 
 /**
  * Let's the generation of robots do it's thing and then creates a new one accordingly.
  **/
 void evolve() {
-  // TODO.
+    // TODO.
 }
