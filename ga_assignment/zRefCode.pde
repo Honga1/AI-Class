@@ -11,7 +11,7 @@
 
 //    Robot baby = new Robot(genes.length);
 
-//    // Itterates and copies the genes into the baby robot.
+//    // Iterates and copies the genes into the baby robot.
 //    for (int i = 0; i < genes.length; i++) {
 //        if (i < crossOverPoint) {
 //            baby.genes[i] = partner.genes[i];
