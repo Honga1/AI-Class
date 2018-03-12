@@ -22,7 +22,7 @@ This is the file where all the code comes together. You'll probably still rememb
 
 
 ### Goal
-bla
+This is a small class that makes it possible to draw the goal point on the screen. When you run the code, you will see that this is the grey square in the middle of the screen. The class also has a collision detection function called `containsPoint`. Do you know where that could be used for?
 
 ### Obstacles
 bla
