@@ -27,3 +27,9 @@
 //  //new Obstacle(400, 500, 15, 200, color(111, 111, 111)), 
 //  //new Obstacle(500, 600, 220, 15, color(111, 111, 111)), 
 //  //new Obstacle(500, 400, 220, 15, color(111, 111, 111))};
+
+
+// Fitness level of the robot is measured according to distance to the goal.
+//    void calcFitness(Goal _goal) {
+//        fitness = 1.0 / (1.0 + pow(pow( x - _goal.x, 2.0) + pow(y - _goal.y, 2.0), 0.5)) * 1.0 / (float)pathLength;
+//    }

@@ -5,12 +5,13 @@
  * Jae Perris and Joelle Zweekhorst
  */
 
-int generationCounter = 0; //Tracks the number of generations that have been computed
-float generationFitness = 0; //Tracks the average fitness of the generation 
 
-int populationSize = 600; //Size of the number of 'Robots' or individual organisms
-int geneSize = 300; //Size of the gene string. This * the robot speed gives the maximum travel distance achievable
-float mutationRate = 0.05; //The chance that any individual gene is assigned a new random value
+int generationCounter = 0; // Tracks the number of generations that have been computed.
+float generationFitness = 0; // Tracks the average fitness of the generation.
+
+int populationSize = 600; // Size of the number of 'Robots' or individual organisms.
+int geneSize = 300; // Size of the gene string. This * the robot speed gives the maximum travel distance achievable.
+float mutationRate = 0.05; // The chance that any individual gene is assigned a new random value.
 
 boolean newBest = false;
 
