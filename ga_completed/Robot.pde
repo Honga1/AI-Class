@@ -14,15 +14,15 @@ class Robot {
         pathLength = 0;
         x = 50;
         y = height / 2;
-        
+
         // The robot is made up of an array of genes that form the path.
         genes = new String[_pathSize];
-        
+
         // Stores a direction command in each of the genes within the robot.
         for (int i = 0; i < _pathSize; i++) {
             int chosenCommand = (int)random(0, commands.length);
             genes[i] = commands[chosenCommand];
-        } 
+        }
     }
 
     // Copies a robot to a new robot.
@@ -46,19 +46,20 @@ class Robot {
 
     // Creates new robot that inherits from current robot and random partner.
     Robot crossover(Robot partner) {
-        
+
         // This determines how much of the child will be inherited from each parent. 
         int crossOverPoint = (int)random(0, genes.length);
-        
+
         Robot baby = new Robot(genes.length);
-        
+
         // Itterates and copies the genes into the baby robot.
         for (int i = 0; i < genes.length; i++) {
-            if (i < crossOverPoint) {
-                baby.genes[i] = partner.genes[i];
-            } else {
-                baby.genes[i] = this.genes[i];
-            }
+            // TODO 2
+          if (i < crossOverPoint) {
+              baby.genes[i] = partner.genes[i];
+          } else {
+              baby.genes[i] = this.genes[i];
+          }                        
         }
         return baby;
     }
@@ -73,7 +74,7 @@ class Robot {
         noStroke();
         fill(displColor);
         int[] step = {50, height / 2};
-        
+
         // Iterates over the genes of the robot.
         for (int i = 0; i < genes.length; i++) {
             if (isAtGoal(_goal)) {
@@ -91,7 +92,7 @@ class Robot {
             }
         }
     }
-    
+
     // Chenks if a certain coordinate is is interfering with an obstacle object.
     boolean willHitObstacle(String _step, Obstacle[] _obstacles) {
         int[] step = driveOneStep(_step, x, y);
@@ -111,7 +112,7 @@ class Robot {
             return false;
         }
     }
-    
+
     // Checks if certain coordinate is on the robot.
     boolean containsPoint(int _x, int _y) {
         float distance = pow(pow( x - _x, 2) + pow(y - _y, 2), 0.5);
@@ -128,7 +129,7 @@ class Robot {
         pathLength = 0;
         x = 50;
         y = height / 2;
-        
+
         // Iterates over the genes in the robot. 
         for (int i = 0; i < genes.length; i++) {
             if (willHitObstacle(genes[i], obstacles)) {
@@ -150,7 +151,7 @@ class Robot {
     // Displays the next gene in the array on the right position on the screen.
     int[] driveOneStep(String _step, int _x, int _y) {
         int[] ret = new int[2];
-        
+
         // Switch that displays the gene on the right position according to the direction command.
         switch(_step) {
         case "LEFT":    
@@ -171,7 +172,7 @@ class Robot {
 
         ret[0] = _x;
         ret[1] = _y;
-        
+
         // Returns the new current gene. 
         return ret;
     }

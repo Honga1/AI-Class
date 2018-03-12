@@ -42,7 +42,7 @@ void driveRobots() {
     generationFitness += robots[i].fitness;
   }
   SortRobots.bubbleSort(robots); //Sorts robots by fitness
-
+  
   // Selects the best attempt by choosing the first robot in the array.
   bestAttempt = new Robot(robots[0]);
 
