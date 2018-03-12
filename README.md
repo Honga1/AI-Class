@@ -16,7 +16,7 @@ bla
 ## ga_assignment
 
 ### ga_assignment
-This is the file where all the code comes together. You'll probably still remember the `void setup()` and the `void draw()` function, right? You can find them in here! There is also some global variables defined here, these are usable in every file that is stored in the ga_assignment folder. Something to pay attention to in this file as well is the `evolve()` function. As you can see at the bottom of the code, it is still empty. You're first TODO!
+This is the file where all the code comes together. You'll probably still remember the `void setup()` and the `void draw()` function, right? You can find them in here! There is also some global variables defined here, these are usable in every file that is stored in the ga_assignment folder. Something to pay attention to in this file as well is the `evolve()` function. As you can see at the bottom of the code, it is still empty. Your first TODO!
 
 ### Environment
 bla
