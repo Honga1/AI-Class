@@ -1,44 +1,40 @@
 /*
 * Lab assignment Artificial Intelligence Tue Mar 13 2018.
-* Evolutionary computation, pathfinding example.
-*
-* Jae Perris and Joelle Zweekhorst
-*/
+ * Evolutionary computation, pathfinding example.
+ *
+ * Jae Perris and Joelle Zweekhorst
+ */
 
-int generationCounter = 0;
-int populationSize = 600;
-int geneSize = 200;
-float mutationRate = 0.05;
-float generationFitness = 0;
+int generationCounter = 0; //Tracks the number of generations that have been computed
+float generationFitness = 0; //Tracks the average fitness of the generation 
+
+int populationSize = 600; //Size of the number of 'Robots' or individual organisms
+int geneSize = 300; //Size of the gene string. This * the robot speed gives the maximum travel distance achievable
+float mutationRate = 0.05; //The chance that any individual gene is assigned a new random value
+
 boolean newBest = false;
-boolean newSol = false;
 
 Robot[] robots;
 Robot bestAttempt;
 Goal goal;
 
 void setup() {
-    size(500, 500);
-    frameRate(10000);
-    
-    goal = new Goal(width/2, height/2);
-    robots = new Robot[populationSize];
-    
-    for (int i = 0; i < populationSize; i++) {
-        robots[i] = new Robot(geneSize);
-    }
-    
-    bestAttempt = new Robot(robots[0]);
-    
+  size(1000, 1000); //Minimum X-Y
+  frameRate(10000); //Set this high to un-cap our computation rate
+
+  goal = new Goal(width/2, height/2);
+  robots = new Robot[populationSize];
+
+  for (int i = 0; i < populationSize; i++) {
+    robots[i] = new Robot(geneSize);
+  }
+
+  bestAttempt = new Robot(robots[0]);
 }
 
 // Main loop.
 void draw() {
-    
-    evolve();
-    
-    drawField();
-    generationFitness = 0;
-    generationCounter++;
-    
+  evolve(); //Runs the genetic algorithm
+  drawField(); //Draws the objects on the field
+  generationCounter++;
 }
