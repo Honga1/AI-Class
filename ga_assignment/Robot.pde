@@ -54,7 +54,7 @@ class Robot {
 
         // Itterates and copies the genes into the baby robot.
         for (int i = 0; i < genes.length; i++) {
-            // TODO 2
+            // TODO 2.
             
             
             
