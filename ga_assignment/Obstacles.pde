@@ -1,5 +1,9 @@
 // Array of all the obstacles.
 Obstacle[] obstacles = {}; // TODO 3.
+//{new Obstacle(200, 520, 15, 220, color(111, 111, 111)), 
+//new Obstacle(400, 500, 15, 200, color(111, 111, 111)), 
+//new Obstacle(500, 600, 220, 15, color(111, 111, 111)), 
+//new Obstacle(500, 400, 220, 15, color(111, 111, 111))};
 
 class Obstacle {
   int x;
