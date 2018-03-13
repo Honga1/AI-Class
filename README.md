@@ -45,9 +45,11 @@ Tab: Robot
 Lines: 68
 
 Goals:
+
 Make the robots sensitive to their pathLength variable through their fitness function. This will now force the robots to find an optimal path to the goal
 
 Free:
+
 Make the termination characteristics so the program prints "YAY" when you think a 'good enough' solution is found.
 
 ## ga_assignment
