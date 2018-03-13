@@ -10,10 +10,14 @@ Tab: ga_assignment
 Lines: 62-64
 
 Goals:
+Functions are found in environment tab. You do not need to write them
 
 Add the following behavior (functions)
+
 Run the robots through their path
+
 Select the robots for crossover
+
 Mutate each of the robots genes randomly
 
 ### TODO 2
