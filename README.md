@@ -1,3 +1,6 @@
+# AI Class
+This project is designed as a short class for experimenting with Genetic Algorithms in Processing. It was designed for supplementary coursework to an AI class offered at Leiden University.
+
 ## Download
 To download the code, press the green button in the top right corner that says "Clone or download" and select "Download ZIP". The files you'll need will be in the folder "ga_assignment". It's a processing program, so that should be familliar! If you want to take a look at the slides of the presentation again, they are also in the ZIP folder you just downloaded.
 
